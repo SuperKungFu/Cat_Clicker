@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+    	<h2>Select your warrior</h1>
+    	<select id="catSelector" onclick="catUp(this.selectedIndex)">
+     	</select>
+    </div>
+
+    <div id="cat-container" class="container" style="display:none;">
+    	<h1>Click <span id="catName"></span></h1>
+    	<div id="counter-container">Count: <span id="catCounter">0</span></div>
+    	<img id="catImg"/>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
